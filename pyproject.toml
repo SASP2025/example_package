@@ -25,11 +25,10 @@ license-files = ["LICENSE"]
 docs = [
     "sphinx",
     "sphinx-automodapi",
-    "matplotlib",
     "sphinx",
     "tomli",
 ]
-test = [
+tests = [
     "pytest",
     "pytest-doctestplus",
 ]
@@ -61,6 +60,7 @@ include = [
 [tool.setuptools_scm]
 # can be empty if no extra settings are needed, presence enables setuptools-scm
 version_file = "mypackage/_version.py"
+
 
 [tool.pytest.ini_options]
 testpaths = [
